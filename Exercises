@@ -1,0 +1,58 @@
+Chapter 8
+#1
+print("Python"[1])
+#y
+print("Strings are sequences of characters."[5])
+#g
+print(len("wonderful"))
+#9
+print("p" in "Pineapple")
+#True
+print("apple" in "Pineapple")
+#True
+print("pear" not in "Pineapple")
+#True
+print("apple" > "pineapple")
+#False
+print("pineapple" < "Peach")
+#False
+
+#2
+prefixes = "JKLMNOPQ"
+suffix = "uack"
+
+for i in range(len(prefixes)):
+    if prefixes[i] == "O" or prefixes[i] == "Q":
+        print(prefixes[i] + suffix)
+
+#3
+def count_letters(fruit):
+    count = 0
+    for char in fruit:
+        if char == "a":
+            count += 1
+    print(count)
+count_letters("banana")
+
+#4
+def count_letters(fruit):
+    count = 0
+    for char in fruit:
+        if char == "a":
+            count += 1
+    print(count)
+count_letters("banana")
+
+#5
+Text = "To make a cake, place five teasponons of sugar. After that place water in and stir thoroughly. Wait 10 minutes for the water to rise."
+def remove_punctuation(n):
+    Length = len(Text)
+    count = 0
+    for i in list(Text):
+        if i == "e":
+            count = count + 1
+    Percentage = (count/Length)*100
+    print("The total number of E's in a",Length,"words"" is",count,Percentage,"%")
+
+remove_punctuation(Text)
+

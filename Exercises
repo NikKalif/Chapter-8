@@ -77,7 +77,7 @@ def mirror(n):
     print(String+Reverse)
 mirror(String)
 
-#9
+#9(I have problems with this)
 letter = input("Please enter letter to be removed: ")
 Words = input("Pleae enter words: ")
 
@@ -91,5 +91,49 @@ print(remove_letter(letter,Words))
 
 #for loop characters
 #new string with new characters
+
+#10
+String = input("Please enter words to be reversed: ")
+def is_palindrome(n):
+    Reverse = String[::-1]
+    if String == Reverse:
+        print("Is a palindrome")
+    else:
+        print("Is not a palindrome")
+
+is_palindrome(String)
+
+
+#11("I don't know why the counting is wrong when calculating the number of times the substring occures.)
+Substring = input("Please input the substring: ")
+String = input("Please input the string: ")
+
+def count(SS,S):
+    print(S.find(SS))
+count(Substring,String)
+
+
+
+#12
+def remove(SS,S):
+    index = S.find(SS)
+    if index < 0:
+        return S
+    return_str = S[:index] + S[index+len(SS):]
+    return return_str
+
+S = input("What is the original string: ")
+SS = input("What would you like to remove: ")
+print(remove(SS, S))
+
+#13
+def remove_all(SS, S):
+    new_string = S.replace(SS, "")
+    return new_string
+
+S = input("What string would you like to remove from?")
+SS = input("What would you like to remove from that string?")
+print(remove_all(SS, S))
+
 
 
